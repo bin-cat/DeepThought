@@ -150,7 +150,7 @@
     </span>
   </a>
   {% endif %}
-  
+
   {% if social_config.orcid %}
   <a class="has-text-orcid" href="https://orcid.org/{{ social_config.orcid }}" target="_blank">
     <span class="icon is-large" title="ORCiD">
@@ -191,8 +191,8 @@
   </a>
   {% endif %}
 
-  {% if config.generate_feed %}
-  <a class="has-text-rss" href="{{ config.base_url }}/{{ config.feed_filename }}" target="_blank">
+  {% if config.generate_feeds %}
+  <a class="has-text-rss" href="{{ config.base_url }}/{{ config.feed_filenames[0] }}" target="_blank">
     <span class="icon is-large" title="RSS Feed">
       <i class="fas fa-rss fa-lg"></i>
     </span>
